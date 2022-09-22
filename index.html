@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercedes</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="nav-bar">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          <span style="cursor: pointer" onclick="openNav()"
+            ><img src="img/menu.png" class="menu" alt=""
+          /></span>
+        </div>
+      </div>
+      <div class="logobar">
+        <img src="img/logo.png" class="logo" alt="" />
+      </div>
+      <div class="searchbar">
+        <img src="img/search.png" class="search" alt="" />
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container">
+        <h2>the all new</h2>
+        <h1>S-class</h1>
+
+        <div class="text grid-two-col">
+          <div class="detail border-right border-bottom-sm">
+            <h3>Luxury</h3>
+            <p>
+              The greatest refinement out there paired with thechnological
+              brilliance.
+            </p>
+          </div>
+          <div class="detail">
+            <h3>362 hp</h3>
+            <p>
+              The greatest refinement out there paired with thechnological
+              brilliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

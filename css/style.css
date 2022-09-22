@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #f1f1f1;
+  background-color: #131313;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 90px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.border-right {
+  border-right: 1px solid #fff;
+  height: 100%;
+}
+
+/*================================================================= grid start =================================================================*/
+
+.grid-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*================================================================= grid end ===================================================================*/
+
+/*============================================================= 
+                    index page start 
+=============================================================*/
+
+/*============================================================= header start =============================================================*/
+
+.header {
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.menu,
+.search {
+  width: 2rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  border-radius: 0 5px 5px 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #48c5b7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align: center;
+  font-size: 40px;
+  line-height: 100px;
+  color: var(--theme-bg);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/*============================================================= header end =============================================================*/
+
+/*============================================================= hero start =============================================================*/
+
+.hero-section {
+  background: url(../img/car.png);
+  background-repeat: no-repeat;
+  background-position: 0 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text {
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 30%;
+  padding: 15px;
+}
+
+.detail {
+  padding: 0 15px;
+}
+
+/*============================================================= hero end ==============================================================*/
+
+/*============================================================= 
+                    index page end 
+=============================================================*/

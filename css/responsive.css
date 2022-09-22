@@ -1,0 +1,80 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .border-bottom-sm {
+    border-bottom: 1px solid #fff;
+  }
+
+  .grid-two-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .text {
+    margin-top: 40%;
+    padding: 0px;
+  }
+
+  .detail {
+    padding: 20px 0;
+  }
+
+  .border-right {
+    border-right: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .hero-section {
+    background: url(../img/car.png);
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .text {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 471px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 0px;
+  }
+
+  .text {
+    margin-top: 75%;
+    padding: 0px;
+  }
+}
